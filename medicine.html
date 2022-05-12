@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>medicine</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>За теб е подходяща медицината</h2>
+ <p>Медицината е хуманна наука за диагностициране, лечение и предотвратяване на болести и наранявания. Тя изучава системите на човешкия организъм, симптомите и заболяванията и тяхното лечение, което помага за практическото прилагане на това знание и изкуство, както и създаването на лекарства и технологии в областта на медицината. Разнообразието, устройството и начинът на живот на животните и организмите, които се изучават от биологията, водят до възникване на специални и приложни клонове в медицината.</p>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Лекар</button>
+<button id="myBtn2">Ветеринар</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  
+  <!-- Modal content -->
+  <div class="modal-content">
+  <span onclick="document.getElementById('myModal').style.display='none'" class="close">&times;</span>
+    <p>Лекарят е специалист по медицина, който се грижи за поддържането, подобрението и възстановяването на здравето при хората (за животни, виж ветеринар), чрез изследването и изучаването, диагностицирането и лечението на заболявания, травми и наранявания, и други физически или емоционални и умствени неразположения, като последното се отнася по-скоро до клиничните психолози и психиатрите, макар че могат да бъдат и само съпътстващи на обичайни физически заболявания.</p>
+  </div>
+
+</div>
+
+<div id="myModal2" class="modal">
+  
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span onclick="document.getElementById('myModal2').style.display='none'" class="close">&times;</span>
+    <p>Ветеринар или ветеринарен лекар е лице, което се грижи за здравето на приетите за лечение животни</p>
+  </div>
+
+</div>
+	
+<button onclick="return_main()">Върни към тест</button>
+	<script>
+	function return_main() {
+		window.open("main.html","_self")
+	}
+</script>
+	
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+//var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+	  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+// Get the modal
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+//var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+</script>
+
+</body>
+</html>

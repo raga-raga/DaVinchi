@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>engineering</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>За теб биха били подходящи техническите науки</h2>
+ <p>Техническите науки, наричани и инженерство или инженерни науки, са науките, които се занимават с изследване на явленията, свързани с развитието на техниката, разработването на нови конструкции и на технологични процеси. Това се постига чрез използването на знания в областта на физиката, математиката и чрез практически експерименти, насочени към усъвършенствуването на инструменти и апарати, или създаването на нови материали, процеси или изделия за нуждите на човечеството.</p>
+	
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">ИТ</button>
+<button id="myBtn2">Енергетика</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  
+  <!-- Modal content -->
+  <div class="modal-content">
+  <span onclick="document.getElementById('myModal').style.display='none'" class="close">&times;</span>
+    <p>Информационните технологии (ИТ) са група технологии, предназначени за събиране, обработка, съхранение, обмен, създаване, процесинг и разпространение на текстово-информационна, графична, звукова, онлайн информация, като се използва за тази цел базирани на микроелектрониката устройства, компютри, принтери, скенери и мобилна и телекомуникационна техника. Информационните технологии обхващат практическото приложение на хардуера и електрониката, и информатиката, както и софтуерните технологии, и в това отношение споделят някои общи черти с инженерните дисциплини.</p>
+  </div>
+
+</div>
+
+<div id="myModal2" class="modal">
+  
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span onclick="document.getElementById('myModal2').style.display='none'" class="close">&times;</span>
+    <p>Енергетиката е промишлен отрасъл, включващ както добивни отрасли (добив на енергийни източници – уран, въглища, нефт, газ, торф и др.), така и големи естествени и изкуствени подсистеми, служещи за производство, преобразуване, разпределение и използване на енергийните ресурси от всички видове. Крайната цел е производство на енергия чрез преобразуване на първична природна енергия във вторична, подходяща за използване от хората, например електрическа енергия или топлинна енергия.</p>
+  </div>
+
+</div>
+<button onclick="return_main()">Върни към тест</button>
+	<script>
+	function return_main() {
+		window.open("main.html","_self")
+	}
+</script>	
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+//var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+	  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+// Get the modal
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+//var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+</script>
+
+</body>
+</html>
