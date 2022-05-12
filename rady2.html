@@ -17,81 +17,132 @@ input {
 </style>
 <body>
 	<div>
-		<p>Харесваш ли математика</p>
-		<input type="radio" id="math_da" name="pitane1" value="1">
-		<label>DA</label><br>
-		<input type="radio" id="math_ne" name="pitane1" value="-1">
-		<label >NE</label><br>
-		<input type="radio" id="math_nez" name="pitane1" value="0">
-		<label >Ne znam</label>	
+		<p>Интересно ли ти е да решаваш задачи?</p>
+		<input type="radio" id="math_da" name="TECH1" value="1">
+		<label>Да</label><br>
+		<input type="radio" id="math_ne" name="TECH1" value="-1">
+		<label >Не</label><br>
+		<input type="radio" id="math_nez" name="TECH1" value="0">
+		<label >Не знам</label>	
 	</div>
 	<div>
-		<p>Харесваш ли физика</p>
-		<input type="radio" id="cici_da" name="pitane2" value="1">
-		<label>DA</label><br>
-		<input type="radio" id="cici_ne" name="pitane2" value="-1">
-		<label >NE</label><br>
-		<input type="radio" id="cici_nez" name="pitane2" value="0">
-		<label >Ne znam</label>	
+		<p>Интерено ли ти е разбереш повече за космоса?</p>
+		<input type="radio" id="fiz_da" name="TECH2" value="1">
+		<label>Да</label><br>
+		<input type="radio" id="fiz_ne" name="TECH2" value="-1">
+		<label >Не</label><br>
+		<input type="radio" id="fiz_nez" name="pitane2" value="0">
+		<label >Не знам</label>	
 	</div>
 	<div>
-		<p>Харесваш ли биология</p>
-		<input type="radio" id="domat_da" name="pitane3" value="1">
-		<label>DA</label><br>
-		<input type="radio" id="domat_ne" name="pitane3" value="-1">
-		<label >NE</label><br>
-		<input type="radio" id="domat_nez" name="pitane3" value="0">
-		<label >Ne znam</label>	
+		<p>Интересуваш ли се от автомобили?</p>
+		<input type="radio" id="tech_da" name="TECH3" value="1">
+		<label>Да</label><br>
+		<input type="radio" id="tech_ne" name="TECH3" value="-1">
+		<label >Не</label><br>
+		<input type="radio" id="tech_nez" name="TECH3" value="0">
+		<label >Не знам</label>	
 	</div>
 	<div>
-		<p>Харесваш ли цитология и хистология</p>
-		<input type="radio" id="cito_da" name="pitane4" value="1">
-		<label>DA</label><br>
-		<input type="radio" id="cito_ne" name="pitane4" value="-1">
-		<label >NE</label><br>
-		<input type="radio" id="cito_nez" name="pitane4" value="0">
-		<label >Ne znam</label>	
+		<p>Интересно ли ти е да гледаш химични реакции?</p>
+		<input type="radio" id="Him1_da" name="Him1" value="1">
+		<label>Да</label><br>
+		<input type="radio" id="Him1_ne" name="Him1" value="-1">
+		<label >Не</label><br>
+		<input type="radio" id="Him1_nez" name="Him1" value="0">
+		<label >Не знам</label>	
 	</div>
-<button onclick="myFunction()">proveri</button>
+	<div>
+		<p>Интеренсо ли ти е как работи човешкото тяло?</p>
+		<input type="radio" id="Him2_da" name="Him2" value="1">
+		<label>Да</label><br>
+		<input type="radio" id="Him2_ne" name="Him2" value="-1">
+		<label >Не</label><br>
+		<input type="radio" id="Him2_nez" name="Him2" value="0">
+		<label >Не знам</label>	
+	</div>
+	<div>
+		<p>Интеренсо ли ти е как работи природата?</p>
+		<input type="radio" id="Him3_da" name="Him3" value="1">
+		<label>Да</label><br>
+		<input type="radio" id="Him3_ne" name="Him3" value="-1">
+		<label >Не</label><br>
+		<input type="radio" id="Him3_nez" name="Him3" value="0">
+		<label >Не знам</label>	
+	</div>
+	<div>
+		<p>Интересно ли ти е да гледаш химични реакции?</p>
+		<input type="radio" id="Iz1_da" name="Iz1" value="1">
+		<label>Да</label><br>
+		<input type="radio" id="Iz1_ne" name="Iz1" value="-1">
+		<label >Не</label><br>
+		<input type="radio" id="Iz1_nez" name="Iz1" value="0">
+		<label >Не знам</label>	
+	</div>
+	<div>
+		<p>Интеренсо ли ти е как работи човешкото тяло?</p>
+		<input type="radio" id="Iz2_da" name="Iz2" value="1">
+		<label>Да</label><br>
+		<input type="radio" id="Iz2_ne" name="Iz2" value="-1">
+		<label >Не</label><br>
+		<input type="radio" id="Iz2_nez" name="Iz2" value="0">
+		<label >Не знам</label>	
+	</div>
+	<div>
+		<p>Интеренсо ли ти е как работи природата?</p>
+		<input type="radio" id="Iz3_da" name="Iz3" value="1">
+		<label>Да</label><br>
+		<input type="radio" id="Iz_ne" name="Iz3" value="-1">
+		<label >Не</label><br>
+		<input type="radio" id="Iz3_nez" name="Iz3" value="0">
+		<label >Не знам</label>	
+	</div>
+	
+<button onclick="myFunction()">Резултат</button>
 
 
 
 
 <script>
 	function myFunction() {
-		var pitane1 = document.getElementsByName('pitane1');
-		var pitane2 = document.getElementsByName('pitane2');
-		var pitane3 = document.getElementsByName('pitane3');
-		var pitane4 = document.getElementsByName('pitane4');
-		var a = 0;
-		var b = 0;
-		var c = 0;
-		var d = 0;
+		var pitane1 = document.getElementsByName('TECH1');
+		var pitane2 = document.getElementsByName('TECH2');
+		var pitane3 = document.getElementsByName('TECH3');
+		var pitane4 = document.getElementsByName('Him1');
+		var pitane5 = document.getElementsByName('Him2');
+		var pitane6 = document.getElementsByName('Him3');
+		var pitane7 = document.getElementsByName('Iz1');
+		var pitane8 = document.getElementsByName('Iz2');
+		var pitane9 = document.getElementsByName('Iz3');
+	
+		var tech = 0;
+		var him = 0;
+		var iz = 0;
 		for(i = 0; i < pitane1.length; i++) {
 			if(pitane1[0].checked)
 			//document.getElementById("result1").innerHTML = "pitane1: "+pitane1[i].value;
-				 a++;
+				 tech++;
 			if(pitane1[1].checked)
 			//document.getElementById("result1").innerHTML = "pitane1: "+pitane1[i].value;
-				 a--;
+				 tech--;
 			if(pitane2[0].checked)
 			//document.getElementById("result2").innerHTML = "pitane2: "+pitane2[i].value;
-				b++;
+				tech++;
 			if(pitane2[1].checked)
 			//document.getElementById("result2").innerHTML = "pitane2: "+pitane2[i].value;
-				b--;
+				tech--;
 			if(pitane3[0].checked)
 			//document.getElementById("result3").innerHTML = "pitane3: "+pitane3[i].value;
-				c++;
+				tech++;
 			if(pitane3[1].checked)
 			//document.getElementById("result3").innerHTML = "pitane3: "+pitane3[i].value;
-				c--;
+				tech--;
 			if(pitane4[0].checked)
 			//document.getElementById("result4").innerHTML = "pitane4: "+pitane4[i].value;
-				d++;
+				him++;
 			if(pitane4[1].checked)
 			//document.getElementById("result3").innerHTML = "pitane3: "+pitane3[i].value;
-				d--;
+				him--;
 			var engineering = a+b;
 			var medicine = c+d;
 			//document.write(engineering);
